@@ -1,7 +1,5 @@
 # Projeto final
 
-Descrição rápida do seu projeto. Explique o que ele faz e o objetivo principal.
-
 ---
 funsionalidades
 
