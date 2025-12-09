@@ -1,0 +1,152 @@
+:root {
+  --cor-primaria: #3b6bb0;
+  --cor-secundaria: #4a7bd6;
+  --cor-fundo-card: #f5f8ff;
+  --cor-danger: #e04f5f;
+  --radius: 10px;
+  --shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--cor-primaria);
+  font-size: 2rem;
+  margin: 10px 0 25px;
+}
+
+form {
+  background: var(--cor-fundo-card);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+form input {
+  flex: 1 1 200px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: var(--radius);
+  transition: 0.2s;
+}
+
+form input:focus {
+  border-color: var(--cor-secundaria);
+  box-shadow: 0 0 8px rgba(74,123,214,0.3);
+}
+
+form button {
+  padding: 10px 18px;
+  background: var(--cor-secundaria);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background: var(--cor-primaria);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+th {
+  background: var(--cor-primaria);
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+tr:hover {
+  background: #e6f0ff;
+}
+
+td button {
+  background: transparent;
+  color: var(--cor-danger);
+  border: 1px solid rgba(224,79,95,0.4);
+  padding: 6px 10px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+td button:hover {
+  background: rgba(224,79,95,0.1);
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: right;
+  color: var(--cor-primaria);
+}
+
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+
+  table, thead, tbody, th, tr, td {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    background: var(--cor-fundo-card);
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  td {
+    border: none;
+    padding: 8px 0;
+  }
+
+  td::before {
+    font-weight: bold;
+    color: var(--cor-primaria);
+    display: block;
+  }
+
+  td:nth-child(1)::before { content: "Item:"; }
+  td:nth-child(2)::before { content: "Quantidade:"; }
+  td:nth-child(3)::before { content: "Preço:"; }
+  td:nth-child(4)::before { content: "Total:"; }
+}

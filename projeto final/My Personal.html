@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="My Personal.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Lista de Compras</h1>
+  </header>
+
+  <main>
+    <section aria-label="Adicionar itens">
+      <form id="formItem">
+        <input type="text" id="nomeItem" placeholder="Produto" required aria-label="Nome do produto">
+        <input type="number" id="quantidadeItem" placeholder="Quantidade" required aria-label="Quantidade">
+        <input type="number" id="precoItem" placeholder="Preço" required step="0.01" aria-label="Preço">
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section aria-label="Tabela de compras">
+      <table id="tabelaCompras">
+        <thead>
+          <tr>
+            <th scope="col">produto</th>
+            <th scope="col">Quantidade</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Total</th>
+            <th scope="col">Ação</th>
+          </tr>
+        </thead>
+
+        <tbody id="listaItens"></tbody>
+      </table>
+    </section>
+
+    <section aria-label="Total geral">
+      <p><strong>Total Geral: R$ <span id="total">0.00</span></strong></p>
+    </section>
+  </main>
+
+  <script src="My Personal.js"></script>
+</body>
+</html>
