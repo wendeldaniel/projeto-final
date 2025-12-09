@@ -3,13 +3,25 @@
 Descrição rápida do seu projeto. Explique o que ele faz e o objetivo principal.
 
 ---
+funsionalidades
 
-Funcionalidades
+Adicionar produtos com:
 
-- Funcionalidade 1
-- Funcionalidade 2
-- Funcionalidade 3
+Nome
 
+Quantidade
+
+Preço
+
+Cálculo automático do total por item
+
+Exibição do total geral
+
+Remover itens da lista
+
+Interface estilizada com layout moderno e organizado
+
+Campos de entrada fáceis de usar
 ---
 
  Tecnologias utilizadas
